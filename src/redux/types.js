@@ -12,4 +12,6 @@ export const types = {
 
   uiOpenLateralBox: '[ui] Open lateral box',
   uiCloseLateralBox: '[ui] Close lateral box',
+  uiOpenCategoriesBox: '[ui] Open categories box',
+  uiCloseCategoriesBox: '[ui] Close categories box',
 };

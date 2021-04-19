@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setActiveCategory } from '../redux/actions/productsActions';
+import { closeCategoriesBox } from '../redux/actions/uiActions';
 
 export const CategoriesList = () => {
   const dispatch = useDispatch();
@@ -20,11 +21,12 @@ export const CategoriesList = () => {
 
   const handleSetActiveCategory = (category) => {
     dispatch(setActiveCategory(category));
+    dispatch(closeCategoriesBox());
   };
 
   return (
     <div className="categories-list">
-      <h3>Categorías</h3>
+      <h1>Categorías</h1>
       <hr />
       <span
         onClick={() => handleSetActiveCategory('all')}

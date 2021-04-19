@@ -11,3 +11,15 @@ export const openLateralBox = () => {
     type: types.uiOpenLateralBox,
   };
 };
+
+export const openCategoriesBox = () => {
+  return {
+    type: types.uiOpenCategoriesBox,
+  };
+};
+
+export const closeCategoriesBox = () => {
+  return {
+    type: types.uiCloseCategoriesBox,
+  };
+};

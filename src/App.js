@@ -6,7 +6,9 @@ import { AppRouter } from './routes/AppRouter';
 export const App = () => {
   return (
     <Provider store={store}>
-      <AppRouter />
+      <main>
+        <AppRouter />
+      </main>
     </Provider>
   );
 };

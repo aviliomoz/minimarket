@@ -11,8 +11,8 @@ export const AppRouter = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/products" component={Products} />
-        <Redirect to="/products" />
+        <Route exact path="/" component={Products} />
+        <Redirect to="/" />
       </Switch>
     </Router>
   );

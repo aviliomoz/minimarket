@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { MdShoppingCart } from 'react-icons/md';
+import { MdShoppingCart, MdMenu } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
 import { Modal } from './Modal';
 import {
@@ -8,7 +8,7 @@ import {
   getProducts,
 } from '../redux/actions/productsActions';
 import { LateralBox } from './LateralBox';
-import { openLateralBox } from '../redux/actions/uiActions';
+import { openCategoriesBox, openLateralBox } from '../redux/actions/uiActions';
 import { ProductInfo } from '../components/ProductInfo';
 
 // Images
@@ -58,9 +58,15 @@ export const Layout = ({ children }) => {
             {cart.length !== 0 && <span>{cart.length}</span>}
             <MdShoppingCart />
           </i>
+          <i
+            onClick={() => dispatch(openCategoriesBox())}
+            className="layout-header-menu"
+          >
+            <MdMenu />
+          </i>
         </section>
       </header>
-      <main className="layout-main">{children}</main>
+      <div className="layout-main">{children}</div>
       <footer className="layout-footer">
         <span>2021 - Mini Market</span>
         <span>
