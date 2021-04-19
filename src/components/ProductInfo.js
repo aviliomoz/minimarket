@@ -43,7 +43,7 @@ export const ProductInfo = ({ product }) => {
   return (
     <div className="product-info">
       <section className="product-info-image">
-        <img src={product.image} alt={product.name} />
+        <img src={`https://minimarket-aviliomoz.herokuapp.com${product.image}`} alt={product.name} />
       </section>
       <section className="product-info-data">
         <h1>{product.name}</h1>
