@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setActiveCategory } from '../redux/actions/productsActions';
 import { closeCategoriesBox } from '../redux/actions/uiActions';
@@ -6,7 +6,18 @@ import { closeCategoriesBox } from '../redux/actions/uiActions';
 export const CategoriesList = () => {
   const dispatch = useDispatch();
 
+  const categoriesBox = useRef();
+
   const { categories, activeCategory } = useSelector((state) => state.products);
+  const { categoriesBoxIsOpen } = useSelector((state) => state.ui);
+
+  useEffect(() => {
+    if (categoriesBoxIsOpen) {
+      categoriesBox.current.classList.add('active');
+    } else {
+      categoriesBox.current.classList.remove('active');
+    }
+  }, [categoriesBoxIsOpen]);
 
   const capitalize = (text) => {
     const capitalLetter = text.split('')[0].toUpperCase();
@@ -25,7 +36,7 @@ export const CategoriesList = () => {
   };
 
   return (
-    <div className="categories-list">
+    <div ref={categoriesBox} className="categories-list">
       <h1>Categorías</h1>
       <hr />
       <span

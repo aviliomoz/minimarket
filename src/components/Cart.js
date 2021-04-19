@@ -43,7 +43,7 @@ export const Cart = () => {
               <strong>S/{total.toFixed(2)}</strong>
             </div>
             <div className="cart-options-pay">
-              <button>Pagar</button>
+              <button>Comprar</button>
             </div>
           </section>
         </React.Fragment>

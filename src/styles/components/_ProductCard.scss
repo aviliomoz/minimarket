@@ -33,3 +33,9 @@
     color: rgba(249, 159, 8, 1);
   }
 }
+
+@media (min-width: 550px) {
+  .product-card {
+    width: 200px;
+  }
+}
