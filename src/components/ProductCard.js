@@ -11,7 +11,10 @@ export const ProductCard = ({ product }) => {
       className="product-card"
     >
       <div className="product-card-image">
-        <img src={product.image} alt={product.name} />
+        <img
+          src={`https://minimarket-aviliomoz.herokuapp.com${product.image}`}
+          alt={product.name}
+        />
       </div>
       <div className="product-card-info">
         <h4>{product.name}</h4>

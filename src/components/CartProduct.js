@@ -15,7 +15,10 @@ export const CartProduct = ({ product }) => {
         <MdDelete />
       </i>
       <section className="cart-product-image">
-        <img src={product.image} alt={product.name} />
+        <img
+          src={`https://minimarket-aviliomoz.herokuapp.com${product.image}`}
+          alt={product.name}
+        />
       </section>
       <section className="cart-product-info">
         <h2>{product.name}</h2>

@@ -62,7 +62,9 @@ export const deleteProductInCart = (product) => {
 export const getProducts = () => {
   return async (dispatch) => {
     try {
-      const res = await fetch('/data/products.json');
+      const res = await fetch(
+        `https://minimarket-aviliomoz.herokuapp.com/api/products`,
+      );
       const data = await res.json();
 
       if (data.ok) {
@@ -81,7 +83,9 @@ export const getProducts = () => {
 export const getCategories = () => {
   return async (dispatch) => {
     try {
-      const res = await fetch('/data/categories.json');
+      const res = await fetch(
+        `https://minimarket-aviliomoz.herokuapp.com/api/categories`,
+      );
       const data = await res.json();
 
       if (data.ok) {
