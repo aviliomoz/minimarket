@@ -1,0 +1,19 @@
+/* // Base */
+@import './base/fonts.css';
+@import './base/global.css';
+
+/* // Containers */
+@import './containers/Layout.css';
+@import './containers/CategoriesList.css';
+@import './containers/ProductsList.css';
+@import './containers/Modal.css';
+@import './containers/LateralBox.css';
+
+/* Components */
+@import './components/ProductsFilter.css';
+@import './components/ProductCard.css';
+@import './components/ProductInfo.css';
+@import './components/ProductCounter.css';
+@import './components/Cart.css';
+@import './components/CartProduct.css';
+@import './components/Loading.css';

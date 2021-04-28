@@ -15,27 +15,27 @@
   z-index: 4;
   animation-name: showCategories;
   animation-duration: 0.5s;
+}
 
-  hr {
-    width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    margin: 1.5em 0 2em 0;
-  }
+.categories-list hr {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin: 1.5em 0 2em 0;
+}
 
-  span {
-    font-size: 1.5rem;
-    margin-bottom: 0.8em;
-    cursor: pointer;
-  }
+.categories-list span {
+  font-size: 1.5rem;
+  margin-bottom: 0.8em;
+  cursor: pointer;
+}
 
-  span:hover {
-    font-weight: bold;
-  }
+.categories-list span:hover {
+  font-weight: bold;
+}
 
-  .active-category {
-    font-weight: bold;
-  }
+.categories-list .active-category {
+  font-weight: bold;
 }
 
 .categories-list.active {
@@ -58,16 +58,17 @@
     padding: 1em;
     display: flex;
     z-index: 1;
-    h1 {
-      font-size: 1.2rem;
-    }
+  }
 
-    hr {
-      margin: 0.8em 0 1em 0;
-    }
+  .categories-list h1 {
+    font-size: 1.2rem;
+  }
 
-    span {
-      font-size: 1rem;
-    }
+  .categories-list hr {
+    margin: 0.8em 0 1em 0;
+  }
+
+  .categories-list span {
+    font-size: 1rem;
   }
 }

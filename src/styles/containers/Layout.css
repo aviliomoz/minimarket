@@ -12,17 +12,16 @@
   top: 0;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(20px);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 3;
+}
 
-  section {
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
+.layout-header section {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .layout-header-logo {
@@ -34,28 +33,29 @@
 .layout-header-cart,
 .layout-header-menu {
   position: relative;
+}
 
-  span {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    color: white;
-    background: rgba(249, 159, 8, 0.9);
-    font-size: 0.8rem;
-    width: 1em;
-    height: 1em;
-    padding: 0.6em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-  }
-  svg {
-    width: 2em;
-    height: 2em;
-    margin-left: 1em;
-    cursor: pointer;
-  }
+.layout-header-cart span {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  color: white;
+  background: rgba(249, 159, 8, 0.9);
+  font-size: 0.8rem;
+  width: 1em;
+  height: 1em;
+  padding: 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.layout-header-cart svg,
+.layout-header-menu svg {
+  width: 2em;
+  height: 2em;
+  margin-left: 1em;
+  cursor: pointer;
 }
 
 .layout-main {
@@ -75,15 +75,16 @@
   text-align: center;
   justify-content: space-evenly;
   align-items: center;
+}
 
-  span {
-    margin-bottom: 1em;
-    a {
-      color: rgba(249, 159, 8, 0.8);
-      text-decoration: none;
-      font-weight: bold;
-    }
-  }
+.layout-footer span {
+  margin-bottom: 1em;
+}
+
+.layout-footer span a {
+  color: rgba(249, 159, 8, 0.8);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {

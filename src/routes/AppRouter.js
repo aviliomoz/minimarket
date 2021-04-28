@@ -5,7 +5,7 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-import { Products } from '../views/Products';
+import { Products } from '../pages/Products';
 
 export const AppRouter = () => {
   return (

@@ -1,0 +1,28 @@
+.loading {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading img {
+  width: 200px;
+  height: 200px;
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes loading {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+
+  100% {
+    width: 140px;
+    height: 140px;
+  }
+}

@@ -16,11 +16,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  img {
-    max-width: 100%;
-    max-height: 100%;
-  }
+.product-card-image img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .product-card:hover .product-card-image {
@@ -29,9 +29,10 @@
 
 .product-card-info-price {
   margin-top: 0.5em;
-  strong {
-    color: rgba(249, 159, 8, 1);
-  }
+}
+
+.product-card-info-price strong {
+  color: rgba(249, 159, 8, 1);
 }
 
 @media (min-width: 550px) {

@@ -14,12 +14,15 @@ import { ProductInfo } from '../components/ProductInfo';
 // Images
 import Logo from '../assets/logo.svg';
 import { Cart } from '../components/Cart';
+import { Loading } from '../components/Loading';
 
 export const Layout = ({ children }) => {
   const dispatch = useDispatch();
 
   const { lateralBoxIsOpen } = useSelector((state) => state.ui);
-  const { activeProduct, cart } = useSelector((state) => state.products);
+  const { products, activeProduct, cart } = useSelector(
+    (state) => state.products,
+  );
 
   useEffect(() => {
     dispatch(getProducts());
@@ -30,6 +33,10 @@ export const Layout = ({ children }) => {
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);
+
+  if (products.length === 0) {
+    return <Loading />;
+  }
 
   return (
     <div className="layout">
